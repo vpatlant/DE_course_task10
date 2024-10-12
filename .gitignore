@@ -1,0 +1,17 @@
+# Default ignored files
+/.git
+/.idea
+/.venv/
+/dags/__pycache__
+/src
+/src/de-course-etl-e7c2444a44f6.json
+/bi
+/DWH/airflow/
+/DWH/postgres/
+/DWH/dev/
+/DWH/src/de-course-etl-e7c2444a44f6.json
+/DWH/logs/
+/DWH/plugins/
+/DWH/test/
+/DWH/src/catalog-ceny_products.csv
+/DWH/src/data/
