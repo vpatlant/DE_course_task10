@@ -71,7 +71,7 @@
  
 <b>ETL</b>
  
- ![dag graph](https://github.com/vpatlant/DE_course_task5/blob/main/img/dag_graph.jpg?raw=true)
+ ![dag graph](https://github.com/vpatlant/DE_course_task10/blob/main/img/dag_graph.jpg?raw=true)
  
  1. start  - точка входа
  2. generator - генерация данных за предыдущую неделю
@@ -88,11 +88,13 @@
  <b>Результат</b>
  скрипт отработал
  
- ![dag graph](https://github.com/vpatlant/DE_course_task5/blob/main/img/execution.jpg?raw=true)
+ ![dag graph](https://github.com/vpatlant/DE_course_task10/blob/main/img/execution.jpg?raw=true)
  
  даже при отсутствующих файлах по одному из регионов за 20-23 неделю
  
-![dag graph](https://github.com/vpatlant/DE_course_task5/blob/main/img/missing.jpg?raw=true)
+![dag graph](https://github.com/vpatlant/DE_course_task10/blob/main/img/missing.jpg?raw=true)
+
+[сгенерированные файлы](https://disk.yandex.ru/d/8d_U0FY8dYyReQ)
 
 
 <b>Визуализируем данные</b>
