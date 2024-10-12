@@ -2,6 +2,7 @@
 /.git
 /.idea
 /.venv/
+/__pycache__
 /dags/__pycache__
 /src
 /src/de-course-etl-e7c2444a44f6.json
