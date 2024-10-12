@@ -20,7 +20,6 @@ x-airflow-common:
     AIRFLOW__SCHEDULER__DAG_DIR_LIST_INTERVAL: 2
     SQL_ALCHEMY_POOL_SIZE: 100
     SQL_ALCHEMY_POOL_RECYCLE: 3600
-    #_PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- httplib2 google-api-python-client oauth2client clickhouse-connect pyspark}
   volumes:
     - ${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags
     - ${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs
@@ -109,12 +108,6 @@ services:
     container_name: airflow_webserver
     <<: *airflow-common
     command: webserver
-    #command: >
-    #    bash -c "
-    #      airflow db init &&
-    #      airflow connections --add postgres_dev --conn_type Postgres --host postgres_dev --schema postgres_dev --login user --password password --port 5432 &&
-    #      airflow connections --add clickhouse_dev --conn_type ClickHouse --host clickhouse_dev --schema clickhouse_dev --login user --password password --port 8123 &&
-    #      webserver"
     ports:
       - "7435:8080"
     healthcheck:
@@ -133,12 +126,6 @@ services:
     container_name: airflow-scheduler
     <<: *airflow-common
     command: scheduler
-    #command: >
-    #    bash -c "
-    #      airflow db init &&
-    #      airflow connections --add postgres_dev --conn_type Postgres --host postgres_dev --schema postgres_dev --login user --password password --port 5432 &&
-    #      airflow connections --add clickhouse_dev --conn_type ClickHouse --host clickhouse_dev --schema clickhouse_dev --login user --password password --port 8123 &&
-    #      scheduler"
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://localhost:8974/health"]
       interval: 30s
@@ -155,12 +142,6 @@ services:
     container_name: airflow-worker
     <<: *airflow-common
     command: celery worker
-    #command: >
-    #    bash -c "
-    #      airflow db init &&
-    #      airflow connections --add postgres_dev --conn_type Postgres --host postgres_dev --schema postgres_dev --login user --password password --port 5432 &&
-    #      airflow connections --add clickhouse_dev --conn_type ClickHouse --host clickhouse_dev --schema clickhouse_dev --login user --password password --port 8123 &&
-    #      celery worker"
     healthcheck:
       test:
         - "CMD-SHELL"

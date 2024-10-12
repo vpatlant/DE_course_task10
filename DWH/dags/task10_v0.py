@@ -273,7 +273,7 @@ dag = DAG(
     schedule='45 12 * * 2',
     catchup=True,
     max_active_runs=1,
-    #on_failure_callback=notify_on_failure
+    on_failure_callback=notify_on_failure
 )
 
 start = EmptyOperator(task_id="start", dag=dag)
