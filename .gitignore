@@ -1,8 +1,10 @@
 # Default ignored files
 /.git
 /.idea
+.idea
+**/.idea/
 /.venv/
-__pycache__
+**/__pycache__/
 /dags/__pycache__
 /src
 /src/__pycache__

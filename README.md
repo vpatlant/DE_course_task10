@@ -1,4 +1,4 @@
-# Итоговое задание №6
+# Итоговое задание №10
 
 ### Задание:
 
@@ -71,7 +71,7 @@
  
 <b>ETL</b>
  
- ![dag graph](https://github.com/vpatlant/DE_course_task5/blob/main/dag_graph.jpg?raw=true)
+ ![dag graph](https://github.com/vpatlant/DE_course_task5/blob/main/img/dag_graph.jpg?raw=true)
  
  1. start  - точка входа
  2. generator - генерация данных за предыдущую неделю
@@ -88,14 +88,14 @@
  <b>Результат</b>
  скрипт отработал
  
- ![dag graph](https://github.com/vpatlant/DE_course_task5/blob/main/execution.jpg?raw=true)
+ ![dag graph](https://github.com/vpatlant/DE_course_task5/blob/main/img/execution.jpg?raw=true)
  
  даже при отсутствующих файлах по одному из регионов за 20-23 неделю
  
-![dag graph](https://github.com/vpatlant/DE_course_task5/blob/main/missing.jpg?raw=true)
+![dag graph](https://github.com/vpatlant/DE_course_task5/blob/main/img/missing.jpg?raw=true)
 
 
 <b>Визуализируем данные</b>
 
-![dag graph](https://github.com/vpatlant/DE_course_task5/blob/main/report.jpg?raw=true)
+![dag graph](https://github.com/vpatlant/DE_course_task10/blob/main/img/report.jpg?raw=true)
 
